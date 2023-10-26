@@ -1,0 +1,55 @@
+<div>
+    <h2>Compte Formulaire</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" [(ngModel)]="client.nom" required>
+      </div>
+      <div>
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" [(ngModel)]="client.prenom" required>
+      </div>
+      <div>
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" [(ngModel)]="client.adresse" required>
+      </div>
+      <div>
+        <label for="cp">Code Postal:</label>
+        <input type="text" id="cp" name="cp" [(ngModel)]="client.cp" required>
+      </div>
+      <div>
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville" name="ville" [(ngModel)]="client.ville" required>
+      </div>
+      <div>
+        <label for="tel">Téléphone:</label>
+        <input type="text" id="tel" name="tel" [(ngModel)]="client.tel" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="client.email" required>
+      </div>
+      <div>
+        <label for="civilite">Civilité:</label>
+        <select id="civilite" name="civilite" [(ngModel)]="client.civilite">
+          <option value="Monsieur">Monsieur</option>
+          <option value="Madame">Madame</option>
+        </select>
+      </div>
+      <div>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="client.password" required>
+      </div>
+      <div>
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" [(ngModel)]="client.login" required>
+      </div>
+      <div>
+        <label for="pays">Pays:</label>
+        <input type="text" id="pays" name="pays" [(ngModel)]="client.pays" required>
+      </div>
+      
+      <button type="submit">Valider</button>
+    </form>
+  </div>
+  
